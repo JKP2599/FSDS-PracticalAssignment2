@@ -39,3 +39,21 @@
 2022-12-04/17:59:24		Input Scaling
 2022-12-04/17:59:24		Generating Prediction using Trained model
 2022-12-04/17:59:24		This Woman probably Had an affair
+2022-12-04/18:47:55		Taking User Input
+2022-12-04/18:47:55		Initialising Linear Regression Model
+2022-12-04/18:47:56		Initializing Scaling model
+2022-12-04/18:47:56		Input Scaling
+2022-12-04/18:47:56		Generating Prediction using Trained model
+2022-12-04/18:47:56		This Woman probably Had an affair
+2022-12-04/18:49:22		Taking User Input
+2022-12-04/18:49:22		Initialising Linear Regression Model
+2022-12-04/18:49:22		Initializing Scaling model
+2022-12-04/18:49:22		Input Scaling
+2022-12-04/18:49:22		Generating Prediction using Trained model
+2022-12-04/18:49:22		This Woman probably Had an affair
+2022-12-04/18:50:07		Taking User Input
+2022-12-04/18:50:07		Initialising Linear Regression Model
+2022-12-04/18:50:08		Initializing Scaling model
+2022-12-04/18:50:08		Input Scaling
+2022-12-04/18:50:08		Generating Prediction using Trained model
+2022-12-04/18:50:08		This Woman probably Had an affair
