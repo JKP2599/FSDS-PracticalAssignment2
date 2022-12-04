@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+<title>Search Page</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+{% endblock %}
+
+{% block body %}
+<div class="content">
+    <h1 style="text-align: center">Predict The Air Temperature [K]</h1>
+
+    <div class="form">
+        <form action="/predict" method="POST">
+            <input type="number" name="rate_marriage" id="rate_marriage" placeholder="Marrige Rating"><br><br>
+            <input type="number" name="age" id="age" placeholder="Age"><br><br>
+            <input type="number" name="yrs_married" id="yrs_married" placeholder="Years Married"><br><br>
+            <input type="number" name="children" id="children" placeholder="No. of Children"><br><br>
+            <input type="number" name="religious" id="religious" placeholder="Religious Rating"><br><br>
+            <input type="number" name="educ" id="educ" placeholder="Level of Education"><br><br>
+            <input type="number" name="occupation" id="occupation" placeholder="Occupation"><br><br>
+            <input type="number" name="occupation_husb" id="occupation_husb" placeholder="Husband's Occupation"><br><br>
+            <input type="submit" value="Predict">
+        </form>
+    </div>
+</div>
+{% endblock %}
