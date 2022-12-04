@@ -29,6 +29,7 @@ def index():
             occupation = float(request.form['occupation'])
             occupation_husb = float(request.form['occupation_husb'])
 
+            log_writer.log(file_object, "Separating sccupation and occupation_husb variables for the model")
             occ_2, occ_3, occ_4, occ_5, occ_6 = [int(occupation == 2),
                                                  int(occupation == 3),
                                                  int(occupation == 4),
@@ -44,7 +45,7 @@ def index():
             logReg_model = 'logReg_model.pickle'
             scale_model = 'scale_model.pickle'
 
-            log_writer.log(file_object, "Initialising Linear Regression Model")
+            log_writer.log(file_object, "Initialising Logistic Regression Model")
             logReg = pickle.load(open(logReg_model, 'rb'))  # loading the Linear Regression model from file
             log_writer.log(file_object, "Initializing Scaling model")
             scaler = pickle.load(open(scale_model, 'rb'))  # loading the standard scaler model from file
