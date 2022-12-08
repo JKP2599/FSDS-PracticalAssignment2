@@ -1,27 +1,30 @@
-{% extends 'base.html' %}
-
-{% block head %}
-
-<title>Search Page</title>
-<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-{% endblock %}
-
-{% block body %}
-<div class="content">
-    <h1 style="text-align: center">Predict The Air Temperature [K]</h1>
-
-    <div class="form">
-        <form action="/predict" method="POST">
-            <input type="number" name="rate_marriage" id="rate_marriage" placeholder="Marrige Rating"><br><br>
-            <input type="number" name="age" id="age" placeholder="Age"><br><br>
-            <input type="number" name="yrs_married" id="yrs_married" placeholder="Years Married"><br><br>
-            <input type="number" name="children" id="children" placeholder="No. of Children"><br><br>
-            <input type="number" name="religious" id="religious" placeholder="Religious Rating"><br><br>
-            <input type="number" name="educ" id="educ" placeholder="Level of Education"><br><br>
-            <input type="number" name="occupation" id="occupation" placeholder="Occupation"><br><br>
-            <input type="number" name="occupation_husb" id="occupation_husb" placeholder="Husband's Occupation"><br><br>
-            <input type="submit" value="Predict">
-        </form>
-    </div>
-</div>
-{% endblock %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Affair Prediction App</title>
+    <link rel="stylesheet" href="static/css/style.css">
+  </head>
+  <body>
+    <h1>Affair Prediction App</h1>
+    <p >Enter the following values to generate a prediction:</p>
+    <form action="/predict" method="POST">
+      <label for="rate_marriage">Rate of Marriage:</label><br>
+      <input type="number" id="rate_marriage" name="rate_marriage" step="0.01"><br>
+      <label for="yrs_married">Years Married:</label><br>
+      <input type="number" id="yrs_married" name="yrs_married" step="0.01"><br>
+      <label for="children">Number of Children:</label><br>
+      <input type="number" id="children" name="children" step="0.01"><br>
+      <label for="religious">Religiousness:</label><br>
+      <input type="number" id="religious" name="religious" step="0.01"><br>
+      <label for="educ">Education Level:</label><br>
+      <input type="number" id="educ" name="educ" step="0.01"><br>
+      <label for="age">Age:</label><br>
+      <input type="number" id="age" name="age" step="1"><br>
+      <label for="occupation">Occupation:</label><br>
+      <input type="number" id="occupation" name="occupation" step="1"><br>
+      <label for="occupation_husb">Husband's Occupation:</label><br>
+      <input type="number" id="occupation_husb" name="occupation_husb" step="1"><br><br>
+      <input type="submit" value="Predict">
+    </form>
+  </body>
+</html>

@@ -1,29 +1,12 @@
-<!DOCTYPE html>
-<html lang="en" >
-
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Review Page</title>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-
-
-      <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-
-
+  <title>Affair prediction</title>
+  <link rel="stylesheet" href="static/css/style.css">
 </head>
-
 <body>
-
-  <div class="table-users">
-   <div class="header" style="text-align: center">Prediction</div>
-
-      <p style="text-align: center" > {{prediction}} </p>
-</div>
-
-
-
+  <h1>Affair prediction</h1>
+  <div id="result">
+    {{ prediction }}
+  </div>
 </body>
-
 </html>
