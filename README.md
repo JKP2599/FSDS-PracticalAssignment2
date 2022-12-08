@@ -1,4 +1,4 @@
-# FSDS-PracticalAssignment2
+# LogisticRegression-AffairsDetermination
 
 This application uses a Logistic Regression Model based on the "Affairs Dataset" from statsmodels python library 
 It determines if a woman had an affair or not based on the user input data and processing it through the trainede Logistic regression model
