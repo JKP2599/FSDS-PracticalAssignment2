@@ -6,8 +6,8 @@
   </head>
   <body>
     <h1>Affair Prediction App</h1>
-    <p >Enter the following values to generate a prediction:</p>
     <form action="/predict" method="POST">
+      <p >Enter the following values to generate a prediction:</p>
       <label for="rate_marriage">Rate of Marriage:</label><br>
       <input type="number" id="rate_marriage" name="rate_marriage" step="0.01"><br>
       <label for="yrs_married">Years Married:</label><br>
@@ -25,6 +25,15 @@
       <label for="occupation_husb">Husband's Occupation:</label><br>
       <input type="number" id="occupation_husb" name="occupation_husb" step="1"><br><br>
       <input type="submit" value="Predict">
+      <br>
+      <br>
     </form>
+    <br>
+    <br>
+    <div id="pred">
+      <div id="predtext">Prediction:</div>
+      <br>
+      <label>{{ prediction }}</label>
+    </div>
   </body>
 </html>

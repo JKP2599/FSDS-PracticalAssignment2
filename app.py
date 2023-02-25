@@ -65,7 +65,7 @@ def index():
 
             log_writer.log(file_object, affair)
             print(affair)
-            return render_template("results.html", prediction=affair)
+            return render_template("index.html", prediction=affair)
         except Exception as e:
             log_writer.log(file_object, "Error Occurred!!")
             log_writer.log(file_object, f'The Exception message is: {e}')
